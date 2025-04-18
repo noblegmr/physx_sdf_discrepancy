@@ -1,0 +1,28 @@
+{
+	"name": "Existing Dockerfile",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	// Add these settings for X11 forwarding
+	"runArgs": [
+		"--gpus=all",
+		"-e",
+		"DISPLAY=${localEnv:DISPLAY}",
+		"-v",
+		"/tmp/.X11-unix:/tmp/.X11-unix"
+	],
+	"remoteEnv": {
+		"DISPLAY": "${localEnv:DISPLAY}",
+		"XDG_RUNTIME_DIR": "/tmp/runtime-dir"
+	},
+	// Optional: Add Python extensions for better development experience
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		}
+	}
+}
