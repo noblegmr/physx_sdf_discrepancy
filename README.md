@@ -82,10 +82,10 @@ This script will:
 ├── Dockerfile                # Defines the build environment
 ├── CMakeLists.txt            # Build configuration for C++ code
 ├── sdf_discrepancy.cpp       # C++ source for PhysX SDF generation
-├── visualize_sdf.py          # Python script for loading, querying, comparing, and visualizing SDFs (ASSUMED NAME)
+├── visualize_sdf.py          # Python script for loading, querying, comparing, and visualizing SDFs
 └── data/
     ├── watertightshape.stl     # Input 3D model for PhysX
-    ├── watertightshape.bin     # Output: PhysX-generated SDF (created by C++ code)
+    ├── watertightshape.bin     # Output: PhysX-generated SDF
     ├── gmr_internal_sdf.bin    # Input: Pre-computed custom SDF
     ├── mergedPointcloud.ply    # Input: Reference point cloud (ground truth)
     ├── collision_log.json      # Input: Query points for analysis
