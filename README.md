@@ -75,10 +75,6 @@ This script will:
     - Red Sphere: The custom SDF distance is closer to the point cloud distance.
   - Green lines connecting each query point to its nearest neighbor in the reference point cloud.
 
-## Interpretation
-
-By observing the console output table and the colors of the spheres in the 3D visualization, you can analyze the discrepancy between the two SDF methods. Red spheres indicate query points where the custom SDF provides a distance value closer to the geometric ground truth (represented by the point cloud), potentially highlighting regions where the custom SDF is more accurate, especially near the object's surface.
-
 ## File Structure
 
 ```
