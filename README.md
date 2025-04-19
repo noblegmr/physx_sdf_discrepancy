@@ -2,7 +2,7 @@
 
 ## Overview
 
-The aim of this project is to show the discrepancy coming out of the SDF generation process.
+This project analyzes and visualizes the discrepancies between NVIDIA PhysX physics simulation results and our custom Signed Distance Field (SDF) implementation. The aim is to identify, quantify, and understand differences in collision detection and physical interactions between these two approaches.
 
 ## Setup and Building
 
